@@ -12,16 +12,20 @@
 
 <script>
         
-        $(document).ready(function (){
-         if(navigator.userAgent.toLowerCase().search("Android") > -1){
-             alert('android');
-             window.location.href = 'https://play.google.com/store/apps/details?id=com.byv.TheArchers2&launch=true';
-         }
-         if(navigator.userAgent.toLowerCase().search("iPhone") > -1){
-             alert('iphone');
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+        alert('android');
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.byv.TheArchers2&launch=true';
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        alert('iphone');
              window.location.href = 'https://www.safilo.arshades.it/PLD7045S.html';
-         }
-        });
+    }
+
+    
 </script>
 
         
