@@ -7,7 +7,7 @@
 
 <p id="demo"></p>
         
-<button onclick="window.location.href='https://play.google.com/store/apps/details?id=com.byv.TheArchers2&launch=true';">
+<button id = "test" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.byv.TheArchers2&launch=true';">
       Click Here
 </button>
 
@@ -21,16 +21,16 @@
     if (/android/i.test(userAgent)) {
         alert('android');
         //window.location.href = 'https://play.google.com/store/apps/details?id=com.byv.TheArchers2&launch=true';
-            
-        window.open('https://play.google.com/store/apps/details?id=com.byv.TheArchers2&launch=true');
+        document.getElementById("test").click();
+        //window.open('https://play.google.com/store/apps/details?id=com.byv.TheArchers2&launch=true');
     }
 
     // iOS detection from: http://stackoverflow.com/a/9039885/177710
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         alert('iphone');
-        // window.location.href = 'https://www.safilo.arshades.it/PLD7045S.html';
+        window.location.href = 'https://www.safilo.arshades.it/PLD7045S.html';
             
-        window.open('https://www.safilo.arshades.it/PLD7045S.html');
+        //window.open('https://www.safilo.arshades.it/PLD7045S.html');
     }
 
     
