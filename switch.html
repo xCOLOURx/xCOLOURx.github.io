@@ -39,8 +39,11 @@
     
     */
         
+    alert('before button');
     const button = document.getElementById("notifications");
     button.addEventListener("click", () => {
+            
+        alert('inside click');
         Notification.requestPermission().then((result) => {
         if (result === "granted") {
                 randomNotification();
@@ -49,6 +52,8 @@
     });
         
     function randomNotification() {
+           alert('inside random');
+
           const randomItem = Math.floor(Math.random() * 10);
           const notifTitle = 'test';
           const notifBody = `Created by ME`;
