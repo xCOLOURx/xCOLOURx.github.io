@@ -7,9 +7,7 @@
 
 <p id="demo"></p>
         
-<!-- <button id = "test" onclick="window.location.href='intent://spaarkly.page.link/?link=https://www.safilo.arshades.it/PLD7045S.html?c%3DrBf3geYISXtkue0WGgFT%26m%3D8nLGluA6g6jmrASLOmAc&apn=it.spaarkly.arshades&afl=https://www.safilo.arshades.it/PLD7045S.html?c%3DrBf3geYISXtkue0WGgFT%26m%3D8nLGluA6g6jmrASLOmAc&isi=1586661818&ibi=it.spaarkly.ARShades-demo&ifl=https://safilo.arshades.it/PLD7045S.html?c=rBf3geYISXtkue0WGgFT%26m=8nLGluA6g6jmrASLOmAc&efr=1#Intent;scheme=https;package=com.android.chrome;end';">
-      Click Here
-</button> -->
+<!-- <button id = "test" onclick="window.location.href='intent://spaarkly.page.link/?link=https://www.safilo.arshades.it/PLD7045S.html?c%3DrBf3geYISXtkue0WGgFT%26m%3D8nLGluA6g6jmrASLOmAc&apn=it.spaarkly.arshades&afl=https://www.safilo.arshades.it/PLD7045S.html?c%3DrBf3geYISXtkue0WGgFT%26m%3D8nLGluA6g6jmrASLOmAc&isi=1586661818&ibi=it.spaarkly.ARShades-demo&ifl=https://safilo.arshades.it/PLD7045S.html?c=rBf3geYISXtkue0WGgFT%26m=8nLGluA6g6jmrASLOmAc&efr=1#Intent;scheme=https;package=com.android.chrome;end';">Click Here</button> -->
 
         
 <button id = "notifications" >
@@ -19,25 +17,6 @@
 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
 <script>
-        
-    /*
-    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-    if (/android/i.test(userAgent)) {
-        alert('android');
-        document.getElementById("test").click();
-        
-    }
-
-    // iOS detection from: http://stackoverflow.com/a/9039885/177710
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-        alert('iphone');
-        window.location.href = 'https://www.safilo.arshades.it/PLD7045S.html';
-            
-        //window.open('https://www.safilo.arshades.it/PLD7045S.html');
-    }
-    
-    */
         
     alert('before button');
     const button = document.getElementById("notifications");
@@ -65,7 +44,30 @@
           new Notification(notifTitle, options);
           setTimeout(randomNotification, 30000);
     }
-}
+        
+        
+        
+    /*
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (/android/i.test(userAgent)) {
+        alert('android');
+        document.getElementById("test").click();
+        
+    }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        alert('iphone');
+        window.location.href = 'https://www.safilo.arshades.it/PLD7045S.html';
+            
+        //window.open('https://www.safilo.arshades.it/PLD7045S.html');
+    }
+    
+    */
+        
+    
+
 
     
 </script>
