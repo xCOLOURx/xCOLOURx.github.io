@@ -33,16 +33,15 @@
     function randomNotification() {
            alert('inside random');
 
-          const randomItem = Math.floor(Math.random() * 10);
-          const notifTitle = 'test';
-          const notifBody = `Created by ME`;
           
-          const options = {
-            body: notifBody,
-            
-          };
-          new Notification(notifTitle, options);
-          setTimeout(randomNotification, 30000);
+          let title = "JavaScript Jeep";
+          let icon = 'https://github.com/seanfirefox/TheGrumpyNUSFreshman/assets/35872524/3488693d-a84b-4b22-a329-90f9320f9c5a';
+          let body = "It's Your boarding time";
+          var notification = new Notification(title, { body, icon });
+          notification.onclick = () => {
+                notification.close();
+                window.parent.focus();
+         }
     }
         
         
