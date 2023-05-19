@@ -18,11 +18,10 @@
 
 <script>
         
-    alert('before button');
+    
     const button = document.getElementById("notifications");
     button.addEventListener("click", () => {
-            
-        alert('inside click');
+        
         Notification.requestPermission().then((result) => {
         if (result === "granted") {
                 randomNotification();
@@ -31,8 +30,6 @@
     });
         
     function randomNotification() {
-           alert('inside random');
-
           
           let title = "JavaScript Jeep";
           let icon = 'https://github.com/seanfirefox/TheGrumpyNUSFreshman/assets/35872524/3488693d-a84b-4b22-a329-90f9320f9c5a';
