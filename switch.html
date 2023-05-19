@@ -21,10 +21,10 @@
     
     const button = document.getElementById("notifications");
     button.addEventListener("click", () => {
-        
+        navigator.serviceWorker.register('sw.js');
         Notification.requestPermission().then((result) => {
         if (result === "granted") {
-                randomNotification();
+                navigator.serviceWorker.ready.then(randomNotification());
         }
         });
     });
@@ -35,7 +35,7 @@
           let icon = 'https://github.com/seanfirefox/TheGrumpyNUSFreshman/assets/35872524/3488693d-a84b-4b22-a329-90f9320f9c5a';
           let body = "It's Your boarding time";
           var notification = new Notification(title, { body, icon });
-          alert('gsgfs');
+          
           notification.onclick = () => {
                 notification.close();
                 window.parent.focus();
