@@ -2,7 +2,7 @@
   "applinks": {
       "details": [
            {
-             "appIDs": [ "3DHXPY4DUZ.com.pixcel.test2" ],
+             "appIDs": [ "3DHXPY4DUZ.com.pixcel.piperks" ],
              "components": [
                {
                   "#": "no_universal_links",
@@ -14,11 +14,11 @@
        ]
    },
    "webcredentials": {
-      "apps": [ "3DHXPY4DUZ.com.pixcel.test2" ]
+      "apps": [ "3DHXPY4DUZ.com.pixcel.piperks" ]
    },
 
 
     "appclips": {
-        "apps": ["3DHXPY4DUZ.com.pixcel.test2.Clip"]
+        "apps": ["3DHXPY4DUZ.com.pixcel.piperks.Clip"]
     }
 }
