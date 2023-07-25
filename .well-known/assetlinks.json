@@ -1,5 +1,5 @@
 [{
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target" : { "namespace": "android_app", "package_name": "com.pixcels.piperks",
-               "sha256_cert_fingerprints": ["6F:20:C6:4F:C7:2B:75:A8:15:70:93:D2:84:74:82:96:6E:1E:F7:DE:1F:AE:66:B5:94:E7:06:15:F4:4C:AA:37", "AE:D2:F3:97:30:0B:D4:F7:52:8F:E4:10:CE:17:12:9B:16:BA:31:54:2F:0C:34:B1:89:B9:CC:57:89:61:AA:50"] }
+               "sha256_cert_fingerprints": ["AE:D2:F3:97:30:0B:D4:F7:52:8F:E4:10:CE:17:12:9B:16:BA:31:54:2F:0C:34:B1:89:B9:CC:57:89:61:AA:50"] }
 }]
