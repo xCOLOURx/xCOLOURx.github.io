@@ -11,6 +11,10 @@
 
 <script>
 function testClipboard() {
+  navigator.clipboard.writeText("Clipboard API Test").then(
+    v => alert("Success"),
+    e => alert("Fail\n" + e));
+    
   NativeAndroid.copyToClipboard("Clipboard API Test");
 }
 </script>
